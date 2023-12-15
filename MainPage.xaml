@@ -1,0 +1,50 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             BackgroundColor="lightGray"
+             x:Class="Maui_api.MainPage">
+    <StackLayout>
+        <Image Source="joke.jpg" />
+        <Label FontSize="34"
+            Text="Joke API"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand" />
+        <HorizontalStackLayout
+             VerticalOptions="CenterAndExpand" 
+ HorizontalOptions="CenterAndExpand">
+        <Picker x:Name="CategoryPicker"
+                Title="Select Category">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>General</x:String>
+                    <x:String>Programming</x:String>
+                    <x:String>knock-knock</x:String>
+                    <!-- Add more categories as needed -->
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+        <Picker x:Name="NumberOfJokesEntry"
+        Title="Select Category">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Een</x:String>
+                    <x:String>Tien</x:String>
+
+                    
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+</HorizontalStackLayout>
+       
+
+        <Button Text="Get Joke(s)" 
+                x:Name="button"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                Clicked="OnGetJokesClicked" />
+        <!-- Event handler toegevoegd -->
+
+        
+    </StackLayout>
+</ContentPage>

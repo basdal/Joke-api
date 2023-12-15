@@ -1,0 +1,39 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              BackgroundColor="lightGray"
+             
+             x:Class="Maui_api.resultpage">
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <!-- Header Label with Line -->
+        <StackLayout>
+            <Label x:Name="ResultCat"
+                Text="Jokes Result"
+                   FontSize="Large"
+                   FontAttributes="Bold" />
+            <BoxView Color="Black" HeightRequest="1" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+
+        <!-- Result Label -->
+        <Label x:Name="ResultLabel" 
+               Text="Result will be displayed here" />
+        
+
+        <!-- Jokes List -->
+        <ListView x:Name="JokesListView"
+                  ItemsSource="{Binding Jokes}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10" Margin="10">
+                            <Label Text="{Binding}" LineBreakMode="WordWrap" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

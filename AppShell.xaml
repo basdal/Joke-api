@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Maui_api.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Maui_api"
+    Shell.FlyoutBehavior="Disabled">
+
+    <ShellContent
+        Title="Joke API"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    <ShellContent
+    Title="Joke results"
+    ContentTemplate="{DataTemplate local:resultpage}"
+    Route="resultpage" />
+</Shell>
