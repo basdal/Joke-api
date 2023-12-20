@@ -28,8 +28,8 @@
         Title="Select Category">
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
-                    <x:String>Een</x:String>
-                    <x:String>Tien</x:String>
+                        <x:String>One</x:String>
+                    <x:String>Ten</x:String>
 
                     
                 </x:Array>

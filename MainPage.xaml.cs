@@ -31,11 +31,11 @@ namespace Maui_api
             // Build the API URL based on the selected category and option
             string apiUrl;
 
-            if (selectedOption == "Een")
+            if (selectedOption == "One")
             {
                 apiUrl = $"https://official-joke-api.appspot.com/jokes/{selectedCategory.ToLower()}/random";
             }
-            else if (selectedOption == "Tien")
+            else if (selectedOption == "Ten")
             {
                 apiUrl = $"https://official-joke-api.appspot.com/jokes/{selectedCategory.ToLower()}/ten";
             }
@@ -45,16 +45,16 @@ namespace Maui_api
                 await DisplayAlert("Error", "Unknown option selected.", "OK");
                 return;
             }
-
-            // TODO: Perform API call with the constructed apiUrl
-            // Replace the following line with your actual API call logic
-            string result = await ApiService.MakeApiCall(apiUrl);
-
-            if (selectedCategory.ToLower() == "knock-knock" && selectedOption == "Tien")
+            if (selectedCategory.ToLower() == "knock-knock" && selectedOption == "Ten")
             {
                 // Handle the case where there are only 5 knock-knock jokes
                 await DisplayAlert("Info", "There are only 5 knock-knock jokes available.", "OK");
             }
+            // TODO: Perform API call with the constructed apiUrl
+            // Replace the following line with your actual API call logic
+            string result = await ApiService.MakeApiCall(apiUrl);
+
+           
             // Navigate to the ResultPage and pass the result as a parameter
             await Navigation.PushAsync(new resultpage(result));
         }

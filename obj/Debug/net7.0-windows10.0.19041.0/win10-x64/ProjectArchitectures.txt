@@ -1,1 +1,1 @@
-C:\school\moa\maui-api\Maui-api\Maui-api.csproj;x64
+C:\school\moa\maui-api\Joke-api\Maui-api.csproj;x64

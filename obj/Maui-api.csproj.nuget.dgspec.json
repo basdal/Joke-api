@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\school\\moa\\maui-api\\Maui-api\\Maui-api.csproj": {}
+    "C:\\school\\moa\\maui-api\\Joke-api\\Maui-api.csproj": {}
   },
   "projects": {
-    "C:\\school\\moa\\maui-api\\Maui-api\\Maui-api.csproj": {
+    "C:\\school\\moa\\maui-api\\Joke-api\\Maui-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\school\\moa\\maui-api\\Maui-api\\Maui-api.csproj",
+        "projectUniqueName": "C:\\school\\moa\\maui-api\\Joke-api\\Maui-api.csproj",
         "projectName": "Maui-api",
-        "projectPath": "C:\\school\\moa\\maui-api\\Maui-api\\Maui-api.csproj",
+        "projectPath": "C:\\school\\moa\\maui-api\\Joke-api\\Maui-api.csproj",
         "packagesPath": "C:\\Users\\Bassie\\.nuget\\packages\\",
-        "outputPath": "C:\\school\\moa\\maui-api\\Maui-api\\obj\\",
+        "outputPath": "C:\\school\\moa\\maui-api\\Joke-api\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
